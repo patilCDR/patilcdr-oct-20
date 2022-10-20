@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const CardBody = () => {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
-  const handleChange = e => {
-    if (e.target.value.length >= 250) {
+  const handleChange = (e) => {
+    if (e.target.value.length > 250) {
       return;
-    } else {
-      setMessage(e.target.value);
     }
+    setMessage(e.target.value);
   };
 
   return (
-    <div className='ml-0 ml-md-4 cus-card-body'>
+    <div className="ml-0 ml-md-4 cus-card-body">
       <textarea
         placeholder="What's happening?"
-        className={`custom-textarea ${message.length >= 250 && 'text-limit'}`}
+        className={`custom-textarea ${message.length >= 250 && "text-limit"}`}
         onChange={handleChange}
+        value={message}
       ></textarea>
-      <span className='text-counter'>{message.length}/250</span>
+      <span className="text-counter">{message.length}/250</span>
     </div>
   );
 };
