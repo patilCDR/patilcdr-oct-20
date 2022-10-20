@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #e8ebee;
+}
+
+.chat-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-heading {
+  color: #0e425d;
+  font-weight: 400;
+}
+
+.profile .profile-pic {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile .profile-name {
+  color: #063c58;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.custom-textarea {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.custom-textarea::placeholder {
+  color: #c5cace;
+  font-weight: 400;
+}
+
+/* .cus-card-body {
+  width: 90%;
+  margin-left: auto;
+} */
+
+.text-counter {
+  color: #083e59;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: right;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.text-limit {
+  color: red;
+  border: 1px solid red;
+}
+
+.image-preview-section {
+  position: relative;
+  background-color: #a3a0a01a;
+  margin-top: 1rem;
+}
+
+.image-preview-section .image-preview {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-preview-section span {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  background: #7794aa;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-font-label {
+  background: #d3cdcd;
+  padding: 0.2rem;
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.4s;
+}
+.custom-font-label:hover {
+  scale: 1.2;
+}
+
+.send-btn {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: #119fb8;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.cus-drop-down i {
+  margin-right: 0.5rem;
+  color: #23526a;
+}
+
+.cus-drop-down b {
+  font-size: 0.8rem;
+  color: #23526a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.cus-drop-down span {
+  font-size: 0.7rem;
+  color: #23526a;
+  font-weight: 400;
+}
+
+.cus-drop-down.active i,
+.cus-drop-down.active b,
+.cus-drop-down.active span {
+  color: #40b1c5 !important;
+}
+
+.btn-success {
+  background: #ebf6fc !important;
+  color: #1ea4bc !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 25px;
+  padding: 0.2rem 1rem !important;
+  font-weight: 600;
+}
